@@ -1,43 +1,43 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 //void Shuzu(int arr[], int len)
-//{
-//	int left = 0;
-//	int right = len - 1;
-//	int tmp = 0;
-//	while (left < right)
-//	{
-//		while (arr[left] % 2 == 1)
-//		{
-//			left++;
-//		}
-//		while (arr[right] % 2 == 0)
-//		{
-//			right--;
-//		}
-//		if (left < right)
-//		{
-//			tmp = arr[left];
-//			arr[left] = arr[right];
-//			arr[right] = tmp;
-//			left++;
-//			right--;
-//
-//		}
-//	}
-//}
-//int main()
-//{
-//	int i = 0;
-//	int arr[] = { 1, 2, 3, 4, 5, 2, 1, 5, 6, 9 };
-//	int len = sizeof(arr) / sizeof(arr[0]);
-//	Shuzu(arr, len);
-//	for (i = 0; i <len; i++)
-//	{
-//		printf("%d ", arr[i]);
-//	}
-//	return 0;
-//}
+{
+	int left = 0;
+	int right = len - 1;
+	int tmp = 0;
+	while (left < right)
+	{
+		while (arr[left] % 2 == 1)
+		{
+			left++;
+		}
+		while (arr[right] % 2 == 0)
+		{
+			right--;
+		}
+		if (left < right)
+		{
+			tmp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = tmp;
+			left++;
+			right--;
+
+		}
+	}
+}
+int main()
+{
+	int i = 0;
+	int arr[] = { 1, 2, 3, 4, 5, 2, 1, 5, 6, 9 };
+	int len = sizeof(arr) / sizeof(arr[0]);
+	Shuzu(arr, len);
+	for (i = 0; i <len; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}
 int find(int arr[3][3], int *px, int * py, int key)
 {
 	int i = 0;

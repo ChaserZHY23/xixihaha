@@ -77,4 +77,22 @@ int main()
 	}
 
 }
+int Zhaoshuzi(char arr[], int len)
+{
+	int i = 0;
+	for (int i = 1; i < len; i++)
+	{
+		arr[0] = arr[0] ^ arr[i];
+	}
+	printf("%d\n", arr[0]);
+	return 0;
+}
+int main()
+{
+	char arr[10] = { 1, 5, 4, 9, 5, 2, 1, 6, 4, 7 };
+	 int len = sizeof(arr) / sizeof(arr[0]);
+	int ret= Zhaoshuzi(arr[10], len);
+	printf("%d\n", ret);
+	 return 0;
+}
 ²©¿ÍÁ´½Ó£ºhttps://blog.csdn.net/ChaserZHY/article/details/101635570

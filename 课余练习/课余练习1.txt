@@ -1187,7 +1187,128 @@ int main() {
 	return 0;
 }
 
+1.一个数组中只有两个数字是出现一次，
+其他所有数字都出现了两次。
+找出这两个只出现一次的数字，编程实现。
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
 
+void find_num(int arr[], int sz, int *num1, int*num2)
+{
+	assert(arr);
+	int ret = 0;
+	int i = 0;
+	int pos = 0;
+	int tmp = 0;
+	*num1 = 0;
+	*num2 = 0;
+	for (i = 0; i < sz; i++)
+	{
+		ret = ret ^ arr[i];
+	}
+	tmp = ret;
+	while (ret)
+	{
+		if ((ret & 1) == 1)
+		{
+			break;
+		}
+		ret = ret >> 1;
+		++pos;
+	}
+	for (i = 0; i < sz; i++)
+	{
+		if ((arr[i] >> pos) & 1)
+		{
+			*num1 ^= arr[i];
+		}
+	}
+	*num2 = *num1^tmp;
+}
+
+int main()
+{
+	int arr[] = { 1, 2, 3, 5, 1, 2, 3, 4 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int num1 = 0;
+	int num2 = 0;
+	find_num(arr, sz, &num1, &num2);
+	printf("%d\n%d\n", num1, num2);
+	system("pause");
+	return 0;
+}
+2.喝汽水，1瓶汽水1元，2个空瓶可以换一瓶汽水，
+给20元，可以多少汽水。
+编程实现。
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int num(int n)
+{
+	if (n == 0)
+	{
+		return 0;
+	}
+	if (n == 1)
+	{
+		return 1;
+
+	}
+	if (n % 2 == 0)
+	{
+		return n + num(n / 2);
+	}
+	else
+	{
+		return (n - 1) + num((n / 2) + 1);
+	}
+}
+
+int main()
+{
+	int n = 0;
+	printf("请问你要花费多少钱？\n");
+	scanf("%d", &n);
+	printf("%d元可以喝%d瓶汽水！！\n", n, num(n));
+	system("pause");
+	return 0;
+}
+3.模拟实现strcpy
+char* my_strcpy(char*dst, const char*src)
+{
+	assert(dst&&src);
+	while ((*dst++ == *src++));
+	return dst;
+}
+int main()
+{
+	char* p1 = "hello";
+     char p2[10];
+
+	my_strcpy(p2, p1);
+	printf("%s\n", p2);
+
+	return 0;
+4.模拟实现strcat
+char* my_strcat(char*dst, const char*src)
+{
+	assert(dst&&src);
+	while (*src++);
+	while ((*dst++ == *src++));
+	return dst;
+}
+int main()
+{
+	char* p1 = "hello";
+	char p2[20];
+	strcpy(p2, "wor\0ld");
+	my_strcat(p2, p1);
+	printf("%s\n", p2);
+	return 0;
+}  
 
 
 

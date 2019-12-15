@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dmo
+namespace _20191126
 {
-    public partial class StudentIfo : Form
+    public partial class rich : Form
     {
-        public StudentIfo()
+        public rich()
         {
             InitializeComponent();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

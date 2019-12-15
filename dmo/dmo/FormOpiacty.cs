@@ -33,5 +33,10 @@ namespace dmo
                 this.Opacity = 1;
             }
         }
+
+        private void FormOpiacty_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

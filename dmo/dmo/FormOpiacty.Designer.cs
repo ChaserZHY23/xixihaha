@@ -44,7 +44,7 @@
             // 
             // SubAtn
             // 
-            this.SubAtn.Location = new System.Drawing.Point(187, 59);
+            this.SubAtn.Location = new System.Drawing.Point(186, 60);
             this.SubAtn.Name = "SubAtn";
             this.SubAtn.Size = new System.Drawing.Size(104, 23);
             this.SubAtn.TabIndex = 1;
@@ -61,6 +61,7 @@
             this.Controls.Add(this.BtnAdd);
             this.Name = "FormOpiacty";
             this.Text = "可调节透明度的窗体";
+            this.Load += new System.EventHandler(this.FormOpiacty_Load);
             this.ResumeLayout(false);
 
         }

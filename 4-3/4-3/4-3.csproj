@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5E775AA-F9C0-431F-97B8-C0A097CE0D2A}</ProjectGuid>
+    <ProjectGuid>{B99E82C8-2CE0-40D7-AEFD-2D2D57528CD0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EX8_6</RootNamespace>
-    <AssemblyName>EX8-6</AssemblyName>
+    <RootNamespace>_4_3</RootNamespace>
+    <AssemblyName>4-3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

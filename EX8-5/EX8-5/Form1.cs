@@ -38,7 +38,8 @@ namespace EX8_5
                 sw.Write(this.textBox1.Text);                   // 开始写入
                 sw.Close();                        // 关闭流
                 fs.Close();                       // 关闭流
-            }
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,7 +54,8 @@ namespace EX8_5
                 StreamReader sr = new StreamReader(of.FileName, Encoding.Default);
                 textBox1.Text = sr.ReadToEnd();     // 读取流并显示 
                 sr.Close();
-            }
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -70,7 +72,8 @@ namespace EX8_5
                 textBox1.Text = "";
                 bw.Close();
                 fs.Close();
-            }
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)

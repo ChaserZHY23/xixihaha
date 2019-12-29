@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listBox_Book = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Bookname = new System.Windows.Forms.TextBox();
-            this.comboBox_Publishing = new System.Windows.Forms.ComboBox();
             this.选择出版社 = new System.Windows.Forms.Label();
-            this.button_Add = new System.Windows.Forms.Button();
+            this.comboBox_Publishing = new System.Windows.Forms.ComboBox();
+            this.textBox_Bookname = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button_Remove = new System.Windows.Forms.Button();
+            this.button_Add = new System.Windows.Forms.Button();
+            this.listBox_Book = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // 选择出版社
+            // 
+            this.选择出版社.AutoSize = true;
+            this.选择出版社.Location = new System.Drawing.Point(26, 80);
+            this.选择出版社.Name = "选择出版社";
+            this.选择出版社.Size = new System.Drawing.Size(97, 15);
+            this.选择出版社.TabIndex = 3;
+            this.选择出版社.Text = "输入出版社：";
+            // 
+            // comboBox_Publishing
+            // 
+            this.comboBox_Publishing.FormattingEnabled = true;
+            this.comboBox_Publishing.Location = new System.Drawing.Point(19, 105);
+            this.comboBox_Publishing.Name = "comboBox_Publishing";
+            this.comboBox_Publishing.Size = new System.Drawing.Size(107, 23);
+            this.comboBox_Publishing.TabIndex = 2;
+            // 
+            // textBox_Bookname
+            // 
+            this.textBox_Bookname.Location = new System.Drawing.Point(19, 52);
+            this.textBox_Bookname.Name = "textBox_Bookname";
+            this.textBox_Bookname.Size = new System.Drawing.Size(100, 25);
+            this.textBox_Bookname.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "输入书名：";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button_Remove);
@@ -64,47 +97,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // listBox_Book
+            // button_Remove
             // 
-            this.listBox_Book.FormattingEnabled = true;
-            this.listBox_Book.ItemHeight = 15;
-            this.listBox_Book.Location = new System.Drawing.Point(489, 81);
-            this.listBox_Book.Name = "listBox_Book";
-            this.listBox_Book.Size = new System.Drawing.Size(257, 214);
-            this.listBox_Book.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "输入书名：";
-            // 
-            // textBox_Bookname
-            // 
-            this.textBox_Bookname.Location = new System.Drawing.Point(19, 52);
-            this.textBox_Bookname.Name = "textBox_Bookname";
-            this.textBox_Bookname.Size = new System.Drawing.Size(100, 25);
-            this.textBox_Bookname.TabIndex = 1;
-            // 
-            // comboBox_Publishing
-            // 
-            this.comboBox_Publishing.FormattingEnabled = true;
-            this.comboBox_Publishing.Location = new System.Drawing.Point(19, 105);
-            this.comboBox_Publishing.Name = "comboBox_Publishing";
-            this.comboBox_Publishing.Size = new System.Drawing.Size(107, 23);
-            this.comboBox_Publishing.TabIndex = 2;
-            // 
-            // 选择出版社
-            // 
-            this.选择出版社.AutoSize = true;
-            this.选择出版社.Location = new System.Drawing.Point(26, 80);
-            this.选择出版社.Name = "选择出版社";
-            this.选择出版社.Size = new System.Drawing.Size(55, 15);
-            this.选择出版社.TabIndex = 3;
-            this.选择出版社.Text = "label2";
+            this.button_Remove.Location = new System.Drawing.Point(36, 80);
+            this.button_Remove.Name = "button_Remove";
+            this.button_Remove.Size = new System.Drawing.Size(75, 23);
+            this.button_Remove.TabIndex = 1;
+            this.button_Remove.Text = "移除>>";
+            this.button_Remove.UseVisualStyleBackColor = true;
+            this.button_Remove.Click += new System.EventHandler(this.button_Remove_Click);
             // 
             // button_Add
             // 
@@ -116,15 +117,14 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // button_Remove
+            // listBox_Book
             // 
-            this.button_Remove.Location = new System.Drawing.Point(36, 80);
-            this.button_Remove.Name = "button_Remove";
-            this.button_Remove.Size = new System.Drawing.Size(75, 23);
-            this.button_Remove.TabIndex = 1;
-            this.button_Remove.Text = "移除>>";
-            this.button_Remove.UseVisualStyleBackColor = true;
-            this.button_Remove.Click += new System.EventHandler(this.button_Remove_Click);
+            this.listBox_Book.FormattingEnabled = true;
+            this.listBox_Book.ItemHeight = 15;
+            this.listBox_Book.Location = new System.Drawing.Point(489, 81);
+            this.listBox_Book.Name = "listBox_Book";
+            this.listBox_Book.Size = new System.Drawing.Size(257, 214);
+            this.listBox_Book.TabIndex = 2;
             // 
             // Form1
             // 

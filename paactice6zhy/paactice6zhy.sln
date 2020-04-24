@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exsite", "Exsite\", "{A35B7572-B072-4494-B344-6832B4C08223}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_44459"
+		Debug.AspNetCompiler.PhysicalPath = "Exsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44459\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_44459"
+		Release.AspNetCompiler.PhysicalPath = "Exsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44459\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "44459"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ex6ChatSite", "Ex6ChatSite\", "{DBE3AAD9-0972-4A81-B266-CBA6A29C894A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_44490"
+		Debug.AspNetCompiler.PhysicalPath = "Ex6ChatSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44490\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_44490"
+		Release.AspNetCompiler.PhysicalPath = "Ex6ChatSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44490\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "44490"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ex6CartSite", "Ex6CartSite\", "{5C244B45-86FD-4839-8A54-6981CEC3CDBC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_44744"
+		Debug.AspNetCompiler.PhysicalPath = "Ex6CartSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44744\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_44744"
+		Release.AspNetCompiler.PhysicalPath = "Ex6CartSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44744\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "44744"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A35B7572-B072-4494-B344-6832B4C08223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35B7572-B072-4494-B344-6832B4C08223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE3AAD9-0972-4A81-B266-CBA6A29C894A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE3AAD9-0972-4A81-B266-CBA6A29C894A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C244B45-86FD-4839-8A54-6981CEC3CDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C244B45-86FD-4839-8A54-6981CEC3CDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
